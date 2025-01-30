@@ -1,0 +1,12 @@
+prefix=C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: libecpg
+Description: PostgreSQL libecpg library
+URL: https://www.postgresql.org/
+Version: 17.2
+Requires.private: libpgtypes, libpq
+Libs: -L${libdir} -lecpg
+Libs.private: -lws2_32 -L${libdir} -lpgport C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/libcrypto.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/libssl.lib -lpgcommon C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/z.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/zstd.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/libcrypto.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/libssl.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/z.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/zstd.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/z.lib C:/Users/MSII/Desktop/End-to-End_Heart_Diseases_Classification/env/Library/lib/zstd.lib
+Cflags: -I${includedir}
